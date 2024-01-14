@@ -30,7 +30,7 @@ class _MyBagScreenState extends State<MyBagScreen> {
       'itemColor': 'Black',
       'itemSize': 'L',
       'itemCount': 1,
-      'itemPrice': 51.0,
+      'itemPrice': 51,
       'imagePath': 'images/pullover.png',
     },
     {
@@ -38,7 +38,7 @@ class _MyBagScreenState extends State<MyBagScreen> {
       'itemColor': 'Gray',
       'itemSize': 'L',
       'itemCount': 1,
-      'itemPrice': 35.0,
+      'itemPrice': 30,
       'imagePath': 'images/tshirt.png',
     },
     {
@@ -46,7 +46,7 @@ class _MyBagScreenState extends State<MyBagScreen> {
       'itemColor': 'Blue',
       'itemSize': 'M',
       'itemCount': 1,
-      'itemPrice': 62.0,
+      'itemPrice': 43,
       'imagePath': 'images/sportdress.png',
     },
   ];
