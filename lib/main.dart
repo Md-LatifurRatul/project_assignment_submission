@@ -180,7 +180,7 @@ class _MyBagScreenState extends State<MyBagScreen> {
                                     ],
                                   ),
                                   Text(
-                                    '\$${(item['itemPrice'] * item['itemCount']).toStringAsFixed(2)}',
+                                    '\$${(item['itemPrice'] * item['itemCount']).toStringAsFixed(0)}',
                                     style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -198,7 +198,7 @@ class _MyBagScreenState extends State<MyBagScreen> {
             ),
           ),
           Container(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -209,7 +209,7 @@ class _MyBagScreenState extends State<MyBagScreen> {
                   ),
                 ),
                 Text(
-                  '\$${_calculateTotalAmount().toStringAsFixed(2)}',
+                  '\$${_calculateTotalAmount().toStringAsFixed(0)}',
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                   ),
@@ -217,7 +217,7 @@ class _MyBagScreenState extends State<MyBagScreen> {
               ],
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 8),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: ElevatedButton(
@@ -289,7 +289,7 @@ class _MyBagScreenState extends State<MyBagScreen> {
     double totalAmount = _calculateTotalAmount();
     final snackBar = SnackBar(
       content: Text(
-          'Congratulations! Your total amount is \$${totalAmount.toStringAsFixed(2)}'),
+          'Congratulations! Your total amount is \$${totalAmount.toStringAsFixed(0)}'),
     );
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
